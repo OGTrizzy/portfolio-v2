@@ -14,7 +14,6 @@ function App() {
       >
         <Navbar />
         <div className="flex-grow-1 position-relative">
-          <div className="parallax-bg"></div>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/project/:id" element={<ProjectPage />} />

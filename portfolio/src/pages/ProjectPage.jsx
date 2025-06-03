@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom";
 
-// Import images from src/img/
 import jsFrameworksImg from "../img/js2.png";
 import adminProjectImg from "../img/SE2.png";
 import examProjectImg from "../img/PE2.png";
@@ -12,26 +11,37 @@ function ProjectPage() {
     "js-frameworks": {
       title: "JavaScript Frameworks",
       description: "A project showcasing advanced JavaScript framework skills.",
-      images: [jsFrameworksImg, "https://via.placeholder.com/600x400"],
+      images: [
+        jsFrameworksImg,
+        "https://images.unsplash.com/photo-1633078654544-61b3455b9161?q=80&w=1945&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      ],
       liveLink: "https://ogtrizzy.github.io/fed2-js2-ca-OGTrizzy/",
       githubLink: "https://github.com/OGTrizzy/fed2-js2-ca-OGTrizzy",
-      reflection: "Reflection on improvements made based on feedback.",
+      reflection:
+        "Dear Tristian, I've reviewed your JavaScript Frameworks project. Completing this work shows real commitment to your learning. Excellent ...",
     },
     AdminProject: {
       title: "Semester Project 2",
       description: "A comprehensive project with modern web technologies.",
-      images: [adminProjectImg, "https://via.placeholder.com/600x400"],
+      images: [
+        adminProjectImg,
+        "https://images.unsplash.com/photo-1633078654544-61b3455b9161?q=80&w=1945&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      ],
       liveLink: "https://ogtrizzy.github.io/Semester-Project-2/",
       githubLink: "https://github.com/OGTrizzy/Semester-Project-2",
-      reflection: "Reflection on improvements made based on feedback.",
+      reflection:
+        "Dear Tristan, Thank you for your submission of the Semester Project 2. Your code demonstrates excellent understanding of JavaScript and web development principles. The implementation shows strong attention to code organization and documentation.",
     },
     "exam-project": {
       title: "Exam Project 2",
       description: "A polished project demonstrating my expertise.",
-      images: [examProjectImg, "https://via.placeholder.com/600x400"],
+      images: [
+        examProjectImg,
+        "https://images.unsplash.com/photo-1633078654544-61b3455b9161?q=80&w=1945&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      ],
       liveLink: "https://ogtrizzy.github.io/PE2/",
       githubLink: "https://github.com/OGTrizzy/PE2",
-      reflection: "Reflection on improvements made based on feedback.",
+      reflection: "Feedback will be added when this is graded",
     },
   };
 
@@ -48,7 +58,7 @@ function ProjectPage() {
         {project.title || "Project Not Found"}
       </h1>
       {project.title ? (
-        <div className="card mb-5">
+        <div className="card mb-5 project-page-card">
           <div className="card-body p-0">
             <div className="gallery-container">
               {project.images.map((img, index) => (
@@ -70,6 +80,7 @@ function ProjectPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-custom"
+                  style={{ textDecoration: "none" }}
                 >
                   View Live Site
                 </a>
@@ -78,6 +89,7 @@ function ProjectPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-custom"
+                  style={{ textDecoration: "none" }}
                 >
                   GitHub Repository
                 </a>
@@ -89,8 +101,10 @@ function ProjectPage() {
           </div>
         </div>
       ) : null}
-      <h2 className="h4 mb-4 T-color">Reflection & Improvements</h2>
-      <p>{project.reflection || "No reflection available."}</p>
+      <h2 className="h4 mb-4 T-color">Feedback:</h2>
+      <p className="T-color">
+        {project.reflection || "No reflection available."}
+      </p>
     </div>
   );
 }

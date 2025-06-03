@@ -3,6 +3,10 @@ import { gsap } from "gsap";
 import { useRef, useEffect } from "react";
 import ProjectCard from "../components/ProjectCard";
 
+import jsFrameworksImg from "../img/js2.png";
+import adminProjectImg from "../img/SE2.png";
+import examProjectImg from "../img/PE2.png";
+
 function Home() {
   const heroRef = useRef(null);
   const projects = [
@@ -10,26 +14,31 @@ function Home() {
       id: "js-frameworks",
       title: "JavaScript Frameworks",
       description: "A project showcasing advanced JavaScript framework skills.",
+      previewImage: jsFrameworksImg,
     },
     {
       id: "AdminProject",
       title: "Semester Project 2",
       description: "A comprehensive project with modern web technologies.",
+      previewImage: adminProjectImg,
     },
     {
       id: "exam-project",
       title: "Exam Project 2",
       description: "A polished project demonstrating my expertise.",
+      previewImage: examProjectImg,
     },
   ];
 
   useEffect(() => {
-    gsap.from(heroRef.current, {
-      opacity: 0,
-      y: 50,
-      duration: 1.5,
-      ease: "power3.out",
-    });
+    if (heroRef.current) {
+      gsap.from(heroRef.current, {
+        opacity: 0,
+        y: 50,
+        duration: 1.5,
+        ease: "power3.out",
+      });
+    }
   }, []);
 
   return (
@@ -38,6 +47,7 @@ function Home() {
         <h1 className="display-3 T-color">Tristian Øyen</h1>
         <p className="lead T-color">Web Developer | Creative Problem Solver</p>
       </section>
+      <br></br>
       <section className="my-5">
         <h2 className="text-center mb-4 T-color">My Projects</h2>
         <div className="d-flex flex-wrap justify-content-center gap-4">
@@ -47,6 +57,7 @@ function Home() {
               id={project.id}
               title={project.title}
               description={project.description}
+              previewImage={project.previewImage}
             />
           ))}
         </div>

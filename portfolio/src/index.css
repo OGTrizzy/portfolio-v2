@@ -26,17 +26,19 @@ body {
 
 .navbar-dark .navbar-nav .nav-link {
   color: #f8f9fa;
+  text-decoration: none;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #ffd700;
+  color: #5d4e9b;
   transform: translateY(-2px);
 }
 
 .navbar-dark .navbar-brand {
   color: #f8f9fa;
   font-weight: 700;
+  text-decoration: none;
 }
 
 .navbar-collapse {
@@ -71,13 +73,19 @@ body {
 }
 
 .hero {
-  background: rgba(29, 32, 44, 0.8);
+  background: linear-gradient(
+    135deg,
+    rgba(29, 32, 44, 0.9) 0%,
+    rgba(45, 55, 72, 0.9) 100%
+  );
   backdrop-filter: blur(10px);
   border-radius: 15px;
   padding: 40px 20px;
   margin-bottom: 20px;
   position: relative;
   overflow: hidden;
+  opacity: 1 !important;
+  z-index: 2;
 }
 
 .hero::before {
@@ -89,7 +97,7 @@ body {
   height: 200%;
   background: radial-gradient(
     circle,
-    rgba(255, 215, 0, 0.1) 0%,
+    rgba(93, 78, 155, 0.1) 0%,
     transparent 70%
   );
   animation: pulse 10s infinite alternate;
@@ -111,36 +119,84 @@ body {
 }
 
 .card {
-  background: linear-gradient(135deg, #1f2a44 0%, #2d3748 100%);
+  background: #1f2a44;
   color: #f8f9fa;
   border: none;
   border-radius: 15px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #2a2e6a, #5d4e9b, transparent);
+  z-index: -1;
+  border-radius: 15px;
+  filter: blur(10px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover::before {
+  opacity: 0.8;
 }
 
 .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 20px rgba(42, 46, 106, 0.3);
+}
+
+.card.project-page-card:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.card.project-page-card:hover::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(45deg, #2a2e6a, #5d4e9b);
+  filter: blur(5px);
+  opacity: 0.5;
+  border-radius: 0 0 0 50%;
+  z-index: -1;
+  transition: opacity 0.3s ease;
 }
 
 .card-img-top {
   border-bottom: 1px solid rgba(248, 249, 250, 0.1);
 }
 
+.project-card .card-img-top {
+  max-width: 400px;
+  max-height: auto;
+  height: auto;
+  border-radius: 10px;
+}
+
 .btn-custom {
-  background: linear-gradient(135deg, #4b0082 0%, #6a0dad 100%);
+  background: #3c4a5e;
   color: #f8f9fa;
   border: none;
   padding: 10px 20px;
   border-radius: 25px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
 .btn-custom:hover {
+  background: #2d3748;
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(75, 0, 130, 0.5);
-  color: #ffd700;
+  box-shadow: 0 5px 15px rgba(60, 74, 94, 0.5);
+  color: #5d4e9b;
 }
 
 footer {
@@ -152,7 +208,8 @@ footer {
 }
 
 footer a {
-  color: #ffd700;
+  color: #5d4e9b;
+  text-decoration: none;
   transition: color 0.3s ease;
 }
 
@@ -161,7 +218,7 @@ footer a:hover {
 }
 
 .T-color {
-  color: #f8f9fa;
+  color: #f8f9fa !important;
 }
 
 .h-screen-fix {
@@ -170,6 +227,8 @@ footer a:hover {
 
 .project-card {
   perspective: 1000px;
+  flex: 0 0 calc(33.33% - 16px);
+  max-width: calc(33.33% - 16px);
 }
 
 .project-card .card {
@@ -179,5 +238,38 @@ footer a:hover {
 
 .project-card .card:hover {
   transform: rotateX(5deg) rotateY(5deg) translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 20px rgba(42, 46, 106, 0.3);
+}
+
+.project-card a,
+.project-card .card-title,
+.project-card .card-text {
+  text-decoration: none !important;
+}
+
+.gallery-container {
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease;
+}
+
+.card.project-page-card {
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
