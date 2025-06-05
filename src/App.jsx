@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/portfolio-v2">
       <div
         className="d-flex flex-column min-vh-100"
         style={{ overflowX: "hidden" }}
