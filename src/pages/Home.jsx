@@ -3,10 +3,6 @@ import { gsap } from "gsap";
 import { useRef, useEffect } from "react";
 import ProjectCard from "../components/ProjectCard";
 
-import jsFrameworksImg from "../img/js2.png";
-import adminProjectImg from "../img/SE2.png";
-import examProjectImg from "../img/PE2.png";
-
 function Home() {
   const heroRef = useRef(null);
   const projects = [
@@ -14,19 +10,19 @@ function Home() {
       id: "js-frameworks",
       title: "JavaScript Frameworks",
       description: "A project showcasing advanced JavaScript framework skills.",
-      previewImage: jsFrameworksImg,
+      previewImage: "/img/js2.png",
     },
     {
       id: "AdminProject",
       title: "Semester Project 2",
       description: "A comprehensive project with modern web technologies.",
-      previewImage: adminProjectImg,
+      previewImage: "/img/SE2.png",
     },
     {
       id: "exam-project",
       title: "Exam Project 2",
       description: "A polished project demonstrating my expertise.",
-      previewImage: examProjectImg,
+      previewImage: "/img/PE2.png",
     },
   ];
 
