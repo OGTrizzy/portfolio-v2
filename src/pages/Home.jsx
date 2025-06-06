@@ -24,6 +24,19 @@ function Home() {
       description: "A polished project demonstrating my expertise.",
       previewImage: "/img/PE2.png",
     },
+    {
+      id: "semester-project-1",
+      title: "Semester Project 1",
+      description:
+        "An early project showcasing foundational web development skills.",
+      previewImage: "/img/bidder-img.png",
+    },
+    {
+      id: "semester-project-2",
+      title: "Semester Project 2",
+      description: "A comprehensive project with modern web technologies.",
+      previewImage: "/img/CSMimg.PNG",
+    },
   ];
 
   useEffect(() => {
