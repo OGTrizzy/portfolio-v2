@@ -5,37 +5,39 @@ import ProjectCard from "../components/ProjectCard";
 
 function Home() {
   const heroRef = useRef(null);
+  const basePath = "/portfolio-v2";
+
   const projects = [
     {
       id: "js-frameworks",
       title: "JavaScript Frameworks",
       description: "A project showcasing advanced JavaScript framework skills.",
-      previewImage: "/img/js2.png",
+      previewImage: `${basePath}/img/js2.png`,
     },
     {
       id: "AdminProject",
       title: "Semester Project 2",
       description: "A comprehensive project with modern web technologies.",
-      previewImage: "/img/SE2.png",
+      previewImage: `${basePath}/img/SE2.png`,
     },
     {
       id: "exam-project",
       title: "Exam Project 2",
       description: "A polished project demonstrating my expertise.",
-      previewImage: "/img/PE2.png",
+      previewImage: `${basePath}/img/PE2.png`,
     },
     {
       id: "semester-project-1",
       title: "Semester Project 1",
       description:
         "An early project showcasing foundational web development skills.",
-      previewImage: "/img/bidder-img.png",
+      previewImage: `${basePath}/img/CSMimg.PNG`,
     },
     {
       id: "semester-project-2",
       title: "Semester Project 2",
       description: "A comprehensive project with modern web technologies.",
-      previewImage: "/img/CSMimg.PNG",
+      previewImage: `${basePath}/img/bidder-img.png`,
     },
   ];
 
