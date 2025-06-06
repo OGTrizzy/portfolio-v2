@@ -26,7 +26,7 @@ function ProjectPage() {
       liveLink: "https://ogtrizzy.github.io/Semester-Project-2/",
       githubLink: "https://github.com/OGTrizzy/Semester-Project-2",
       reflection:
-        "Dear Tristan, Thank you for your submission of the Semester Project 2. Your code demonstrates excellent understanding of JavaScript and web development principles. The implementation shows strong attention to code organization and documentation.",
+        "Dear Tristian, Thank you for your submission of the Semester Project 2. Your code demonstrates excellent understanding of JavaScript and web development principles. The implementation shows strong attention to code organization and documentation.",
     },
     "exam-project": {
       title: "Exam Project 2",
@@ -38,6 +38,31 @@ function ProjectPage() {
       liveLink: "https://ogtrizzy.github.io/PE2/",
       githubLink: "https://github.com/OGTrizzy/PE2",
       reflection: "Feedback will be added when this is graded",
+    },
+    "semester-project-1": {
+      title: "Semester Project 1",
+      description:
+        "An early project showcasing foundational web development skills.",
+      images: [
+        "/img/CSMimg.PNG",
+        "https://images.unsplash.com/photo-1633078654544-61b3455b9161?q=80&w=1945&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      ],
+      liveLink: "https://ogtrizzy.github.io/Semester-Project-1/",
+      githubLink: "https://github.com/OGTrizzy/Semester-Project-1",
+      reflection:
+        "Hi Tristian, Thank you for you semester project submission. Overall a good submission ",
+    },
+    "semester-project-2": {
+      title: "Semester Project 2",
+      description: "A comprehensive project with modern web technologies.",
+      images: [
+        "/img/bidder-img.png",
+        "https://images.unsplash.com/photo-1633078654544-61b3455b9161?q=80&w=1945&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      ],
+      liveLink: "https://ogtrizzy.github.io/Semester-Project-2/",
+      githubLink: "https://github.com/OGTrizzy/Semester-Project-2",
+      reflection:
+        "Dear Tristan, Thank you for your submission of the Semester Project 2. Your code demonstrates excellent understanding of JavaScript and web development principles. The implementation shows strong attention to code organization and documentation. Overall Assessment: Your project implements the core functionality with a highly professional approach. The code organization is excellent, with clear separation of concerns and well-documented functions. The use of modern JavaScript features and proper error handling is particularly noteworthy.",
     },
   };
 
