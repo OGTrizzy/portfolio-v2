@@ -9,7 +9,7 @@ function ProjectPage() {
       title: "JavaScript Frameworks",
       description: "A project showcasing advanced JavaScript framework skills.",
       images: [
-        "${basePath}/img/js2.png",
+        `${basePath}/img/js2.png`,
         "https://images.unsplash.com/photo-1633078654544-61b3455b9161?q=80&w=1945&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       ],
       liveLink: "https://ogtrizzy.github.io/fed2-js2-ca-OGTrizzy/",
@@ -21,7 +21,7 @@ function ProjectPage() {
       title: "Semester Project 2",
       description: "A comprehensive project with modern web technologies.",
       images: [
-        "${basePath}/img/SE2.png",
+        `${basePath}/img/SE2.png`,
         "https://images.unsplash.com/photo-1633078654544-61b3455b9161?q=80&w=1945&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       ],
       liveLink: "https://ogtrizzy.github.io/Semester-Project-2/",
@@ -33,7 +33,7 @@ function ProjectPage() {
       title: "Exam Project 2",
       description: "A polished project demonstrating my expertise.",
       images: [
-        "${basePath}/img/PE2.png",
+        `${basePath}/img/PE2.png`,
         "https://images.unsplash.com/photo-1633078654544-61b3455b9161?q=80&w=1945&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       ],
       liveLink: "https://ogtrizzy.github.io/PE2/",
@@ -45,7 +45,7 @@ function ProjectPage() {
       description:
         "An early project showcasing foundational web development skills.",
       images: [
-        "${basePath}/img/CSMimg.PNG",
+        `${basePath}/img/CSMimg.PNG`,
         "https://images.unsplash.com/photo-1633078654544-61b3455b9161?q=80&w=1945&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       ],
       liveLink: "https://ogtrizzy.github.io/Semester-Project-1/",
@@ -57,7 +57,7 @@ function ProjectPage() {
       title: "Semester Project 2",
       description: "A comprehensive project with modern web technologies.",
       images: [
-        "${basePath}/img/bidder-img.png",
+        `${basePath}/img/bidder-img.png`,
         "https://images.unsplash.com/photo-1633078654544-61b3455b9161?q=80&w=1945&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       ],
       liveLink: "https://ogtrizzy.github.io/Semester-Project-2/",
