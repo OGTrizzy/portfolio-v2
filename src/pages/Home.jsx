@@ -9,6 +9,12 @@ function Home() {
 
   const projects = [
     {
+      id: "ga_temp_control",
+      title: "GA Temp Control",
+      description: "A backend project showcasing group collaboration skills.",
+      previewImage: `${basePath}/img/ga_temp_control.png`,
+    },
+    {
       id: "js-frameworks",
       title: "JavaScript Frameworks",
       description: "A project showcasing advanced JavaScript framework skills.",

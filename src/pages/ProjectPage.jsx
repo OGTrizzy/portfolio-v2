@@ -5,6 +5,17 @@ function ProjectPage() {
   const basePath = "/portfolio-v2";
 
   const projects = {
+    "ga_temp_control": {
+      title: "GA Temp Control",
+      description: "A backend project showcasing group collaboration skills.",
+      images: [
+        `${basePath}/img/ga_temp_control.png`,
+        "https://images.unsplash.com/photo-1633078654544-61b3455b9161?q=80&w=1945&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      ],
+      githubLink: "https://github.com/Christonn93/ga_temp_control",
+      reflection:
+        "The execution of the GA Temp Control project was a significant learning experience. The project was a collaborative effort, and I had the opportunity to work closely with my team members to develop a backend solution for temperature control. We utilized various technologies and frameworks to build a robust and efficient system. The project allowed me to enhance my skills in backend development, database management, and teamwork. Overall, it was a rewarding experience that contributed to my growth as a developer.",  
+    },
     "js-frameworks": {
       title: "JavaScript Frameworks",
       description: "A project showcasing advanced JavaScript framework skills.",
