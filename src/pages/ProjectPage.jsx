@@ -14,7 +14,7 @@ function ProjectPage() {
       ],
       githubLink: "https://github.com/Christonn93/ga_temp_control",
       reflection:
-        "The execution of the GA Temp Control project was a significant learning experience. The project was a collaborative effort, and I had the opportunity to work closely with my team members to develop a backend solution for temperature control. We utilized various technologies and frameworks to build a robust and efficient system. The project allowed me to enhance my skills in backend development, database management, and teamwork. Overall, it was a rewarding experience that contributed to my growth as a developer.",  
+        "The execution of the GA Temp Control project was a significant learning experience. The project was a collaborative effort, and I had the opportunity to work closely with my team members to develop a backend solution for temperature control. The project allowed me to enhance my skills in backend development and teamwork. Overall, it was a rewarding experience that contributed to my growth as a developer.",  
     },
     "js-frameworks": {
       title: "JavaScript Frameworks",
