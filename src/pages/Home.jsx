@@ -12,7 +12,7 @@ function Home() {
       id: "ga_temp_control",
       title: "GA Temp Control",
       description: "A backend project showcasing group collaboration skills.",
-      previewImage: `${basePath}/img/ga_temp_control.png`,
+      previewImage: `${basePath}/img/temp-control.png`,
     },
     {
       id: "js-frameworks",
