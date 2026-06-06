@@ -56,7 +56,7 @@ function Home() {
     <div className="container h-screen-fix">
       <section ref={heroRef} className="hero text-center my-5">
         <h1 className="display-3 T-color">Tristian Øyen</h1>
-        <p className="lead T-color">Web Developer | Creative Problem Solver</p>
+        <p className="lead T-color">Junior Fullstack Developer | Creative Problem Solver</p>
       </section>
       <br></br>
       <section className="my-5">
