@@ -15,7 +15,7 @@ function ProjectPage() {
       githubLink: "https://github.com/OGTrizzy/movie-app",
       liveLink: "https://movie-app-six-iota-87.vercel.app/",
       reflection:
-        "The execution of the GA Temp Control project was a significant learning experience. The project was a collaborative effort, and I had the opportunity to work closely with my team members to develop a backend solution for temperature control. The project allowed me to enhance my skills in backend development and teamwork. Overall, it was a rewarding experience that contributed to my growth as a developer.",  
+        "Started as a small joke project, but i love doing this so i could not stop, and i kept working on it. I learned alot about Zustand and TypeScript. I'm pretty happy with this project, this proves to me that i can do it, and i can do better next time",  
     },
     "ga_temp_control": {
       title: "GA Temp Control",
