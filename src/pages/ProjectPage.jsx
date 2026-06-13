@@ -5,6 +5,18 @@ function ProjectPage() {
   const basePath = "/portfolio-v2";
 
   const projects = {
+      "MovieFinder": {
+      title: "MovieFinder",
+      description: "A frontend project showcasing movies and tv shows",
+      images: [
+        `${basePath}/img/MovieFinder.png`,
+        "https://images.unsplash.com/photo-1633078654544-61b3455b9161?q=80&w=1945&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      ],
+      githubLink: "https://github.com/OGTrizzy/movie-app",
+      liveLink: "https://movie-app-six-iota-87.vercel.app/",
+      reflection:
+        "The execution of the GA Temp Control project was a significant learning experience. The project was a collaborative effort, and I had the opportunity to work closely with my team members to develop a backend solution for temperature control. The project allowed me to enhance my skills in backend development and teamwork. Overall, it was a rewarding experience that contributed to my growth as a developer.",  
+    },
     "ga_temp_control": {
       title: "GA Temp Control",
       description: "A backend project showcasing group collaboration skills.",
